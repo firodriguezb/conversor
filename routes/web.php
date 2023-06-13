@@ -23,8 +23,8 @@ Route::get('/formulario', 'App\Http\Controllers\FormularioController@index')->na
 Route::get('/extractor', 'App\Http\Controllers\ExtraccionController@index')->name('extractor');
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Ruta para procesar el inicio de sesión
+Route::post('/login', 'App\Http\Controllers\AuthController@verifyAccessCode')->name('login');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Ruta para cerrar sesión
+Route::post('/logout', 'App\Http\Controllers\AuthController@logout')->name('logout');

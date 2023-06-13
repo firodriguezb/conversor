@@ -14,4 +14,16 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         //
     ];
+    protected $middlewareGroups = [
+        'web' => [
+            // Otros middlewares...
+            \App\Http\Middleware\Authenticate::class,
+        ],
+    
+        // Otros middleware groups...
+        
+        'auth' => [
+            \App\Http\Middleware\Authenticate::class,
+        ],
+    ];    
 }

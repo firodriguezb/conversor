@@ -1,0 +1,11 @@
+table {
+    display: grid;
+}
+
+tr:nth-child(7) {
+    grid-row-start: 1;
+}
+
+td {
+    grid-column-start: 1;
+}

@@ -10,7 +10,7 @@
     <script src="js/formulario.js"></script>
 </head>
 <body>
-    <form method="GET" action="{{ route('extractor') }}"
+    <form method="GET" action="{{ route('extractor') }}" id="formulario">
         <h2 class="logo">
             <img src="images/logo.png" alt="">
         </h2>

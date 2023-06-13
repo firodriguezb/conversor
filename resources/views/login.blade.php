@@ -38,7 +38,9 @@
             @enderror
         </div>
         <div>
-            <a href="/formulario" class="btn">{{ __('Iniciar sesión') }}</a>
+            <button type="submit" class="btn btn-primary">
+                {{ __('Login') }}
+            </button>
         </div>
     </form>
 </body>
